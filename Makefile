@@ -8,3 +8,7 @@ clean:
 .PHONY: all
 all:
 	clean morse
+
+.PHONY: valgrind
+valgrind:
+	valgrind --leak-check=yes ./morse
